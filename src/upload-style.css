@@ -1,0 +1,133 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Basic styling for the body */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+  }
+  
+  /* Header styling */
+  header {
+    background-color: #a33307;
+    color: #fff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 50rem; /* Left padding */
+    padding-right: 2rem; /* Right padding */
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  header nav {
+    margin-top: 0.5rem;
+    background-color: transparent; /* Make the nav background transparent */
+  }
+  
+  header nav a {
+    color: #fff; /* Text color */
+    text-decoration: none;
+    margin: 0; /* Remove margin for full coverage */
+    padding: 1rem 1.5rem; /* Increase padding for a larger clickable area */
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+  }
+  
+  header nav a:hover {
+    text-decoration: underline;
+    background-color: #fff; /* Background color on hover */
+    color: black; /* Change text color to black on hover */
+  }
+  
+  /* Footer styling */
+  footer {
+    background-color: #a33307; /* Bootstrap primary color */
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Adjust padding as needed */
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 300px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 250px;
+    margin-right: 250px; /* Adjust spacing if needed */
+  }
+  
+  nav {
+    display: flex;
+  }
+  
+  nav a {
+    margin-left: 15px; /* Adjust spacing between nav items */
+  }
+  
+  /* Style for the container */
+  .container {
+    max-width: 600px;
+    margin: 20px auto; /* Reduced top margin to move the container higher */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Center the container vertically */
+  main {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100; /* Full viewport height */
+  }
+  
+  /* Optional: Add some styles to the form */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  button[type="submit"] {
+    background-color: #a33307;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #a33307;
+  }
+  
+  
+  
+  

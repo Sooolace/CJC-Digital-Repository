@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Results - Digital Repository</title>
+  <link rel="stylesheet" href="../src/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* Include your existing CSS here or link to your stylesheet */
+    #searchResults {
+      margin-top: 1rem;
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .result-item {
+      padding: 0.5rem;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .result-item:last-child {
+      border-bottom: none; /* Remove last item's border */
+    }
+
+    .result-item h3 {
+      margin: 0.5rem 0;
+    }
+
+    .result-item p {
+      margin: 0.3rem 0;
+      color: #666;
+    }
+
+    .summary {
+      margin-bottom: 1rem;
+    }
+
+    .pagination {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .pagination a {
+      padding: 0.5rem 1rem;
+      background-color: #a33307;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    .pagination a:hover {
+      background-color: #a33307;
+    }
+
+    .back-button {
+      margin-top: 1rem;
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background-color: #a33307;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    .back-button:hover {
+      background-color: #a33307;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="home.html">
+        <img src="../assets/cjcrepologo.png" alt="CJC Repository Logo" class="logo">
+      </a>
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="#">Search</a>
+        <a href="#">Resources</a>
+        <a href="#">Help</a>
+        <a href="login.html" class="sign-in-btn">Sign In</a>
+      </nav>
+    </div>
+  </header> 
+  <main>
+    <section>
+      <div class="search-container">
+        <select id="searchOptions" class="form-select d-inline-block" style="width: auto;">
+          <option value="author">Author</option>
+          <option value="title">Title</option>
+          <option value="publisher">Publisher</option>
+          <option value="year">Year</option>
+          <option value="genre">Genre</option>
+        </select>
+        <input type="text" id="searchBar" class="form-control d-inline-block" style="width: auto; display: inline-block;" placeholder="Search for...">
+        <button class="btn btn-primary"><i class="fas fa-search"></i></button>
+        <a href="advancedsearch.html" class="btn btn-link" style="margin-left: 10px;">Advanced Search</a>
+      </div>
+    </section>
+    <section>
+      <h2>Search Results</h2>
+      <div class="summary">
+        Showing <strong>25</strong> out of <strong>619</strong> results. Starting at result <strong>1</strong>.
+      </div>
+      <div id="searchResults">
+        <!-- Search results will be displayed here -->
+        <div class="result-item">
+          <h3>Sample Title 1</h3>
+          <p>Author: John Doe</p>
+          <p>Publisher: Sample Publisher</p>
+          <p>Year: 2023</p>
+        </div>
+        <div class="result-item">
+          <h3>Sample Title 2</h3>
+          <p>Author: Jane Smith</p>
+          <p>Publisher: Example Publisher</p>
+          <p>Year: 2022</p>
+        </div>
+        <!-- Add more sample results as needed -->
+      </div>
+
+      <div class="pagination">
+        <a href="#" id="prevPage">Previous</a>
+        <a href="#" id="nextPage">Next</a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; Cor Jesu College Digital Repository</p>
+  </footer>
+  <script>
+    // Here you can implement functionality to retrieve search results dynamically if needed.
+    document.getElementById('prevPage').addEventListener('click', function(e) {
+      e.preventDefault();
+      // Logic for previous page
+      console.log('Going to previous page...');
+    });
+
+    document.getElementById('nextPage').addEventListener('click', function(e) {
+      e.preventDefault();
+      // Logic for next page
+      console.log('Going to next page...');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+
+  .bordered-container {
+    border: 2px solid #a33307; /* Adjust color and width */
+    border-radius: 8px; /* Optional: for rounded corners */
+    padding: 10px; /* Optional: space between the image and border */
+    background-color: white; /* Optional: background color */
+  }

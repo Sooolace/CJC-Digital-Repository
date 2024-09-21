@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Repository</title>
+  <link rel="stylesheet" href="../src/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+          <a href="home.html">
+            <img src="../assets/cjcrepologo.png" alt="CJC Repository Logo" class="logo">
+          </a>
+          <nav>
+            <a href="home.html">Home</a>
+            <a href="#">Search</a>
+            <a href="#">Resources</a>
+            <a href="#">Help</a>
+            <a href="login.html" class="sign-in-btn">Sign In</a>
+          </nav>
+        </div>
+      </header> 
+      <section>
+        <div class="search-container">
+          <select id="searchOptions" class="form-select d-inline-block" style="width: auto;">
+            <option value="author">Author</option>
+            <option value="title">Title</option>
+            <option value="publisher">Publisher</option>
+            <option value="year">Year</option>
+            <option value="genre">Genre</option>
+          </select>
+          <input type="text" id="searchBar" class="form-control d-inline-block" style="width: auto; display: inline-block;" placeholder="Search for...">
+          <button class="btn btn-primary"><i class="fas fa-search"></i></button>
+          <a href="advancedsearch.html" class="btn btn-link" style="margin-left: 10px;">Advanced Search</a>
+        </div>
+      </section>
+
+  <div class="study-detail">
+      <h1>The Impact of Digital Repositories</h1>
+      <div class="meta-info">
+          <p><strong>Author:</strong> John Doe</p>
+          <p><strong>Date Published:</strong> January 15, 2024</p>
+          <p class="keywords"><strong>Keywords:</strong> Digital Repositories, Academia, Research</p>
+      </div>
+      <h2>Abstract</h2>
+      <p class="abstract">This study explores the benefits of digital repositories in academic settings, focusing on accessibility, preservation, and collaboration among researchers.</p>
+      
+      <h2>Study Content</h2>
+      <div class="content">
+          <p>Digital repositories have transformed the way academic research is conducted and shared. They provide a platform for scholars to upload their work, making it accessible to a wider audience. This paper examines several key aspects of digital repositories, including their role in enhancing research visibility, supporting open access initiatives, and facilitating collaboration among researchers.</p>
+          
+          <p>Additionally, the study analyzes the challenges faced by institutions in managing these repositories, such as ensuring data integrity, providing adequate support for users, and maintaining up-to-date systems. Recommendations for best practices in repository management are provided, drawing from case studies of successful implementations.</p>
+          
+          <p>In conclusion, digital repositories represent a vital component of the modern research landscape, offering numerous advantages while also posing certain challenges that need to be addressed to maximize their effectiveness.</p>
+      </div>
+  </div>
+
+  <style>
+      .study-detail {
+          background-color: #ffffff;
+          border: 1px solid #e1e1e1;
+          border-radius: 8px;
+          padding: 20px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          max-width: 800px;
+          margin: auto;
+      }
+
+      h1, h2, h3 {
+          color: #333;
+      }
+
+      .meta-info {
+          margin-bottom: 20px;
+      }
+
+      .meta-info p {
+          margin: 5px 0;
+          color: #666;
+      }
+
+      .abstract {
+          font-style: italic;
+          margin: 20px 0;
+          border-left: 3px solid #007bff;
+          padding-left: 10px;
+      }
+
+      .content {
+          margin-top: 20px;
+          line-height: 1.6;
+      }
+
+      .keywords {
+          margin-top: 10px;
+          color: #007bff;
+      }
+  </style>
+</body>
+<footer>
+    <p>&copy; Cor Jesu College Digital Repository</p>
+  </footer>
+</html>

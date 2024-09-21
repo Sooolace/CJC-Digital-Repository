@@ -1,0 +1,211 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic styling for the body */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* Header styling */
+header {
+  background-color: #a33307;
+  color: #fff;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 50rem; /* Left padding */
+  padding-right: 2rem; /* Right padding */
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header nav {
+  margin-top: 0.5rem;
+  background-color: transparent; /* Make the nav background transparent */
+}
+
+header nav a {
+  color: #fff; /* Text color */
+  text-decoration: none;
+  margin: 0; /* Remove margin for full coverage */
+  padding: 1rem 1.5rem; /* Increase padding for a larger clickable area */
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+header nav a:hover {
+  text-decoration: underline;
+  background-color: #fff; /* Background color on hover */
+  color: black; /* Change text color to black on hover */
+}
+
+nav .sign-in-btn {
+  margin-left: 30px; /* Space between "Help" and "Sign In" */
+  padding: 10px 20px;
+  border: 1px solid rgb(223, 223, 223); /* Square border */
+  border-radius: 5px; /* Slightly rounded corners */
+  background-color: rgba(0, 0, 0, 0); /* Fully transparent background */
+  transition: background-color 0.3s ease, color 0.3s; /* Add transition for color */
+}
+
+nav .sign-in-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: black; /* Change text color to black on hover */
+}
+
+/* Main content styling */
+main {
+  padding: 2rem;
+}
+
+/* Search bar styling */
+#searchBar {
+  width: calc(100% - 120px);
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Button styling */
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  background-color: #a33307;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px; /* Rounded corners */
+}
+
+button:hover {
+  background-color: #a33307;
+  color: black; /* Change text color to black on hover */
+}
+
+/* Section styling */
+section {
+  margin-bottom: 1.5rem;
+}
+
+/* Featured documents styling */
+#featuredDocuments {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styling */
+footer {
+  background-color: #a33307; /* Bootstrap primary color */
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center; /* Centers the items horizontally */
+  align-items: center;     /* Centers the items vertically */
+  gap: 1rem;               /* Adds space between elements */
+  margin-top: 0.5rem;      /* Adds some margin on top */
+}
+
+/* Dropdown styling */
+#searchOptions {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px; /* Rounded corners */
+}
+
+/* Search bar styling */
+#searchBar {
+  width: 300px; /* Fixed width for the search bar */
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px; /* Rounded corners */
+}
+
+/* Additional styles for featured documents */
+.featured-document {
+  background-color: #ffffff;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.featured-document h3 {
+  margin: 0;
+  color: #333;
+}
+
+.featured-document p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.featured-document .btn {
+  background-color: #a33307;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.featured-document .btn:hover {
+  background-color: #a33307;
+}
+
+.custom-margin {
+  margin-top: 30px; /* Adjust as needed */
+  margin-bottom: -70px; /* Adjust as needed */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Adjust padding as needed */
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 300px; /* Set the desired width */
+  height: auto; /* Maintain aspect ratio */
+  margin-left: 250px;
+  margin-right: 250px; /* Adjust spacing if needed */
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  margin-left: 15px; /* Adjust spacing between nav items */
+}
+
+/* Center the container vertically */
+
+
+
