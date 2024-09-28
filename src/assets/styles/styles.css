@@ -13,55 +13,6 @@ body {
   background-color: #f4f4f4;
 }
 
-/* Header styling */
-header {
-  background-color: #a33307;
-  color: #fff;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 50rem; /* Left padding */
-  padding-right: 2rem; /* Right padding */
-  text-align: center;
-}
-
-header h1 {
-  margin: 0;
-}
-
-header nav {
-  margin-top: 0.5rem;
-  background-color: transparent; /* Make the nav background transparent */
-}
-
-header nav a {
-  color: #fff; /* Text color */
-  text-decoration: none;
-  margin: 0; /* Remove margin for full coverage */
-  padding: 1rem 1.5rem; /* Increase padding for a larger clickable area */
-  font-weight: bold;
-  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
-}
-
-header nav a:hover {
-  text-decoration: underline;
-  background-color: #fff; /* Background color on hover */
-  color: black; /* Change text color to black on hover */
-}
-
-nav .sign-in-btn {
-  margin-left: 30px; /* Space between "Help" and "Sign In" */
-  padding: 10px 20px;
-  border: 1px solid rgb(223, 223, 223); /* Square border */
-  border-radius: 5px; /* Slightly rounded corners */
-  background-color: rgba(0, 0, 0, 0); /* Fully transparent background */
-  transition: background-color 0.3s ease, color 0.3s; /* Add transition for color */
-}
-
-nav .sign-in-btn:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: black; /* Change text color to black on hover */
-}
-
 /* Main content styling */
 main {
   padding: 2rem;
