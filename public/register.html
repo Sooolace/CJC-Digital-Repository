@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - Digital Repository</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="../src/assets/styles/reg-style.css">
+
+</head>
+<body>
+
+    <div id="header"></div>
+
+  <main>
+    <div class="container my-5">
+      <section id="registerSection">
+        <h2 class="text-center mb-4">Create Your Account</h2>
+        <form action="submit-registration.html" method="POST">
+          
+          <div class="form-group mb-3">
+            <label for="username" class="form-label">Username:</label>
+            <input type="text" id="username" name="username" class="form-control" placeholder="Enter your username" required>
+          </div>
+  
+          <div class="form-group mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+          </div>
+  
+          <div class="form-group mb-3">
+            <label for="department" class="form-label">Department:</label>
+            <select class="form-select" id="department" name="department" required>
+              <option value="" disabled selected>Select Department</option>
+              <option value="ccis">CCIS (College of Computer & Information Sciences)</option>
+              <option value="cabe">CABE (College of Accountancy, Business, and Entrepreneurship)</option>
+              <option value="coe">COE (College of Education)</option>
+              <option value="chs">CHS (College of Health Sciences)</option>
+              <option value="csp">CSP (College of Special Programs)</option>
+            </select>
+          </div>
+  
+          <div class="form-group mb-3">
+            <label for="city" class="form-label">City:</label>
+            <input type="text" id="city" name="city" class="form-control" placeholder="Enter your city" required>
+          </div>
+  
+          <div class="form-group mb-3">
+            <label for="country" class="form-label">Country:</label>
+            <div id="countryDropdown"></div>
+        </div>
+        
+            <div class="form-group mb-3">
+            <label for="password" class="form-label">Password:</label>
+            <input type="password" id="password" name="password" class="form-control" placeholder="Enter password" required>
+          </div>
+
+            <div class="form-group mb-3">
+            <label for="confirmPassword" class="form-label">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" class="form-control" placeholder="Confirm password" required>
+          </div>
+  
+          <div class="d-flex justify-content-between">
+            <button type="submit" class="btn btn-primary" style="background-color: #a33307;">Create Account</button>
+            <button type="button" class="btn btn-secondary" onclick="window.location.href='login.html';">Cancel</button>
+          </div>
+  
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../src/scripts/countries.js"></script>
+</body>
+</html>
